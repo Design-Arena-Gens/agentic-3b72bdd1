@@ -1,0 +1,26 @@
+:root{--bg:#0b0c10;--panel:#111218;--muted:#9aa0a6;--text:#e8eaed;--accent:#7c4dff;--accent-2:#00c2ff;--border:#2a2d36}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:linear-gradient(160deg,#0b0c10 0%,#0f1116 100%);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial,Apple Color Emoji,Segoe UI Emoji}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+.header{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.header h1{margin:0;font-size:28px}
+.subtitle{margin:0;color:var(--muted)}
+.card{background:rgba(255,255,255,0.03);backdrop-filter: blur(6px);border:1px solid var(--border);border-radius:14px}
+.form{display:grid;gap:14px;padding:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.label{font-size:12px;color:var(--muted);margin-bottom:6px}
+.input,.select,.textarea{width:100%;padding:12px 12px;border:1px solid var(--border);border-radius:10px;background:#0f1116;color:var(--text)}
+.textarea{min-height:100px;resize:vertical}
+.btn{appearance:none;border:1px solid transparent;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:white;padding:12px 16px;border-radius:10px;cursor:pointer;font-weight:600}
+.btn.secondary{background:transparent;border-color:var(--border)}
+.actions{display:flex;gap:10px;flex-wrap:wrap}
+.grid{display:grid;gap:14px;margin-top:16px}
+.section{padding:14px}
+.section h3{margin:0 0 8px 0;font-size:16px}
+.code{white-space:pre-wrap;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;background:#0a0c10;border:1px dashed var(--border);padding:12px;border-radius:10px}
+.copy{border:1px solid var(--border);background:#0a0c10;color:var(--text);padding:8px 10px;border-radius:8px;cursor:pointer}
+.footer{margin-top:28px;color:var(--muted);font-size:12px;text-align:center}
+.badge{font-size:11px;color:#cbd5e1;border:1px solid var(--border);padding:4px 8px;border-radius:9999px}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:900px){.row,.two-col{grid-template-columns:1fr}}
